@@ -1,5 +1,5 @@
 // runs only on client side
-if (localStorage) {
+if (typeof window !== 'undefined') {
   if (localStorage.getItem('vueuse-color-scheme') === null)
     localStorage.setItem('vueuse-color-scheme', 'dark')
 }

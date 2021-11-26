@@ -9,7 +9,7 @@ const toggleLocales = () => {
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
   // update the local storage
-  if (localStorage)
+  if (typeof window !== 'undefined')
     localStorage.setItem('locale', locale.value)
 }
 
