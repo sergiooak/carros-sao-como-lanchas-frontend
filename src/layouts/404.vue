@@ -4,20 +4,16 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <main class="px-4 py-10 text-center text-teal-700 dark:text-gray-200">
-    <div>
-      <p class="text-4xl">
-        <carbon-warning class="inline-block" />
-      </p>
-    </div>
-    <router-view />
-    <div>
-      <button
-        class="btn m-3 text-sm mt-8"
-        @click="router.back()"
-      >
-        {{ t('button.back') }}
-      </button>
-    </div>
-  </main>
+  <div class="min-h-full pt-16 pb-12 flex flex-col">
+    <main class="flex-grow flex flex-col justify-center max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex-shrink-0 flex justify-center">
+        <a href="/" class="inline-flex">
+          <span class="sr-only">Workflow</span>
+          <img class="h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600" alt="">
+        </a>
+      </div>
+      <router-view />
+    </main>
+    <Footer />
+  </div>
 </template>

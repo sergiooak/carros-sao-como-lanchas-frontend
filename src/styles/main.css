@@ -8,8 +8,19 @@ body,
   padding: 0;
 }
 
+html{
+  background: linear-gradient(180deg, #EBE7F9 0%, rgba(0,0,0,0) 100%);
+  background-color: #fff;
+}
+
+.bg-transition{
+  /* transition only background and background color */
+  transition: background-color 0.3s ease-out;
+}
+
 html.dark {
-  background: #121212;
+  background: linear-gradient(180deg, #211B36 0%, rgba(0,0,0,0) 100%);
+  background-color: #13111C;
 }
 
 #nprogress {
