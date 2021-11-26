@@ -1,5 +1,8 @@
-if (localStorage && localStorage.getItem('vueuse-color-scheme') === null)
-  localStorage.setItem('vueuse-color-scheme', 'dark')
+// runs only on client side
+if (localStorage) {
+  if (localStorage.getItem('vueuse-color-scheme') === null)
+    localStorage.setItem('vueuse-color-scheme', 'dark')
+}
 
 // these APIs are auto-imported from @vueuse/core
 export const isDark = useDark()

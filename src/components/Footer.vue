@@ -9,7 +9,8 @@ const toggleLocales = () => {
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
   // update the local storage
-  localStorage.setItem('locale', locale.value)
+  if (localStorage)
+    localStorage.setItem('locale', locale.value)
 }
 
 // set locale to whatever is in localStorage, fallback to browser language
