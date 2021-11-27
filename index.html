@@ -14,11 +14,6 @@
       const setting = localStorage.getItem('vueuse-color-scheme') || 'auto'
       if (setting === 'dark' || (prefersDark && setting !== 'light'))
         document.documentElement.classList.toggle('dark', true)
-      // wait a few ms and then add class ".bg-transition" to html element
-      // to enable transition after the first render
-      setTimeout(() => {
-        document.documentElement.classList.add('bg-transition')
-      }, 300)
     })()
   </script>
 </head>
