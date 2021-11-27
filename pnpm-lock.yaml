@@ -6,7 +6,10 @@ specifiers:
   '@iconify-json/carbon': ^1.0.9
   '@iconify-json/gg': ^1.0.1
   '@iconify-json/heroicons-outline': ^1.0.2
+  '@iconify-json/ic': ^1.0.5
   '@iconify-json/la': ^1.0.1
+  '@iconify-json/mdi': ^1.0.11
+  '@iconify-json/ph': ^1.0.2
   '@iconify-json/twemoji': ^1.0.2
   '@intlify/vite-plugin-vue-i18n': ^3.0.0
   '@types/markdown-it-link-attributes': ^3.0.1
@@ -64,7 +67,10 @@ devDependencies:
   '@iconify-json/carbon': 1.0.9
   '@iconify-json/gg': 1.0.1
   '@iconify-json/heroicons-outline': 1.0.2
+  '@iconify-json/ic': 1.0.5
   '@iconify-json/la': 1.0.1
+  '@iconify-json/mdi': 1.0.11
+  '@iconify-json/ph': 1.0.2
   '@iconify-json/twemoji': 1.0.2
   '@intlify/vite-plugin-vue-i18n': 3.0.0_vue-i18n@9.1.9
   '@types/markdown-it-link-attributes': 3.0.1
@@ -1434,8 +1440,26 @@ packages:
       '@iconify/types': 1.0.10
     dev: true
 
+  /@iconify-json/ic/1.0.5:
+    resolution: {integrity: sha512-fCu1jBC8YAopX9JApuM+L0VdwPThpTFT0asBGG1HN7lfm4maHbwD/Cxp3mUIV/pCuTdkNnGgoL/xCe0PmqEb7g==}
+    dependencies:
+      '@iconify/types': 1.0.10
+    dev: true
+
   /@iconify-json/la/1.0.1:
     resolution: {integrity: sha512-BC+sY8ClmJsihi3qYoECY5eISFRDWJCGYOKSfiqAWHirax7Khy2K5nDApT6G6XdMTnhxhUH5yadaFq1gCOEUkA==}
+    dependencies:
+      '@iconify/types': 1.0.10
+    dev: true
+
+  /@iconify-json/mdi/1.0.11:
+    resolution: {integrity: sha512-Pw1C2ucxdfrijj/GqrT1sEvLgM+/PAlK/rQUp6enVtkvhiyFBeQmfHEYr6igL58TumQxM1q83xfZ4obFVCD59w==}
+    dependencies:
+      '@iconify/types': 1.0.10
+    dev: true
+
+  /@iconify-json/ph/1.0.2:
+    resolution: {integrity: sha512-Jfzg5CNtx/P/2fTQeISdq465rEzxj5SlyJE4tGULXSYSir0NPomfRY2zsytAOp2epvnsf1riTS44iMqPhuXXkA==}
     dependencies:
       '@iconify/types': 1.0.10
     dev: true

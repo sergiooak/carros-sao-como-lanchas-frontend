@@ -22,8 +22,8 @@
           <small>v0.0.1</small>
         </div>
       </h1>
-      <nav class="flex gap-2" dark="text-white">
-        <button>D</button>
+      <nav class="flex gap-3 items-center" dark="text-white">
+        <ThemeToggle />
         <LangSelector />
       </nav>
     </div>
