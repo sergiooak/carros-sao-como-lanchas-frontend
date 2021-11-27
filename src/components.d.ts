@@ -15,7 +15,14 @@ declare module 'vue' {
     CarbonWarning: typeof import('~icons/carbon/warning')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     GgSpinner: typeof import('~icons/gg/spinner')['default']
+    Header: typeof import('./components/Header.vue')['default']
+    'HeroiconsOutline:check': typeof import('~icons/heroicons-outline/check')['default']
+    'HeroiconsOutline:selector': typeof import('~icons/heroicons-outline/selector')['default']
+    LangSelecator: typeof import('~icons/la/ng-selecator')['default']
+    LangSelector: typeof import('./components/Header/LangSelector.vue')['default']
     README: typeof import('./components/README.md')['default']
+    'Twemoji:flagForFlagBrazil': typeof import('~icons/twemoji/flag-for-flag-brazil')['default']
+    'Twemoji:flagForFlagUnitedStates': typeof import('~icons/twemoji/flag-for-flag-united-states')['default']
   }
 }
 
