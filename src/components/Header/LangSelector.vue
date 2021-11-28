@@ -24,21 +24,18 @@ const isLocale = (localeToBeChecked: string, availableLocale?: string) => {
     <div class="relative">
       <ListboxButton
         :title="t('button.toggle_langs')"
-        dark="bg-transparent border-gray-700 hover:border-gray-400"
-        border="~ gray-300"
-        p="l-3 r-6 y-2"
-        text="left sm:sm"
-        class="bg-white rounded-md cursor-pointer shadow-sm transition group relative focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
       >
-        <div class="flex items-center justify-center">
-          <!-- eslint-disable-next-line -->
+        <dimmedButton p="l-3 r-6 y-2">
+          <div class="flex items-center justify-center">
+            <!-- eslint-disable-next-line -->
           <twemoji:flag-for-flag-brazil v-if="isLocale('pt-BR')" class="h-6 w-6" />
-          <twemoji:flag-for-flag-united-states v-else-if="isLocale('en')" class="h-6 w-6" />
-          <span class="sr-only">{{ locale }}</span>
-        </div>
-        <span class="flex opacity-50 pr-1 transition-opacity inset-y-0 right-0 absolute items-center pointer-events-none group-hover:opacity-100">
-          <heroicons-outline:selector class="w-5" aria-hidden="true" />
-        </span>
+            <twemoji:flag-for-flag-united-states v-else-if="isLocale('en')" class="h-6 w-6" />
+            <span class="sr-only">{{ locale }}</span>
+          </div>
+          <span class="flex opacity-50 pr-1 transition-opacity inset-y-0 right-0 absolute items-center pointer-events-none group-hover:opacity-100">
+            <heroicons-outline:selector class="w-5" aria-hidden="true" />
+          </span>
+        </dimmedButton>
       </ListboxButton>
 
       <transition
@@ -49,7 +46,7 @@ const isLocale = (localeToBeChecked: string, availableLocale?: string) => {
         <ListboxOptions
           bg="transparent"
           sm="text-sm"
-          class="rounded-md shadow-lg ring-black mt-1 text-base max-h-60 py-1 right-0 ring-1 ring-opacity-5 w-24 z-10 backdrop-filter absolute overflow-auto backdrop-blur-lg backdrop-brightness-110 focus:outline-none"
+          class="rounded-md shadow-lg ring-black mt-1 text-base max-h-60 py-1 right-0 ring-1 ring-opacity-5 w-24 z-10 backdrop-filter absolute overflow-auto backdrop-blur-lg backdrop-brightness-125 focus:outline-none"
         >
           <ListboxOption
             v-for="availableLocale in availableLocales"

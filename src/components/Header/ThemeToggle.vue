@@ -4,8 +4,8 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <button :title="t('button.toggle_dark')" class="flex items-center !outline-none" @click="toggleDark()">
-    <ph:sun-bold v-if="isDark" />
-    <ph:moon-bold v-else />
-  </button>
+  <dimmedButton @click="toggleDark()">
+    <ph:sun-bold v-if="isDark" class="h-5 w-5" />
+    <ph:moon-bold v-else class="h-5 w-5" />
+  </dimmedButton>
 </template>

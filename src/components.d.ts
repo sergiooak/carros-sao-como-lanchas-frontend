@@ -13,6 +13,7 @@ declare module 'vue' {
     CarbonPedestrian: typeof import('~icons/carbon/pedestrian')['default']
     CarbonSun: typeof import('~icons/carbon/sun')['default']
     CarbonWarning: typeof import('~icons/carbon/warning')['default']
+    DimmedButton: typeof import('./components/buttons/dimmedButton.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     'Gg:moon': typeof import('~icons/gg/moon')['default']
     'Gg:sun': typeof import('~icons/gg/sun')['default']
